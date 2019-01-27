@@ -1,4 +1,40 @@
-package PACKAGE_NAME;
-
 public class NWD {
+    public static int jakijestNWD (int a, int b){
+
+        //w ulepszonej wersji wkorzystuje reszte z dzielenia, algorytm euklidesa
+
+        while (b != 0){
+            if (a > b) a -= b;
+            else
+                b -= a;
+            }
+        return a;
+    }
+
+    public static int jakijestNWD2 (int a, int b){
+        while (b != 0){
+            int r = a % b;
+            a = b;
+            b = r;
+        }
+
+        return a;
+    }
+
+    public static void main(String[] args) {
+
+        long start;
+        long stop; //do mierzenia czasu
+
+        start = System.nanoTime();
+        System.out.println(jakijestNWD(102,4));
+        stop = System.nanoTime();
+        System.out.println("czas wykonania operacji nwd " + (stop - start));
+
+        start = System.nanoTime();
+        System.out.println(jakijestNWD2(102,4));
+        stop = System.nanoTime();
+        System.out.println("czas wykonania operacji nwd2 " + (stop - start));
+    }
+
 }
