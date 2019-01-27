@@ -26,15 +26,16 @@ public class NWD {
         long start;
         long stop; //do mierzenia czasu
 
-        start = System.nanoTime();
-        System.out.println(jakijestNWD(102,4));
-        stop = System.nanoTime();
-        System.out.println("czas wykonania operacji nwd " + (stop - start));
 
         start = System.nanoTime();
-        System.out.println(jakijestNWD2(102,4));
+        System.out.println(jakijestNWD(100000,4));
         stop = System.nanoTime();
-        System.out.println("czas wykonania operacji nwd2 " + (stop - start));
+        System.out.println("czas wykonania operacji nwd " + (stop - start) + " nanosekund");
+
+        start = System.nanoTime();
+        System.out.println(jakijestNWD2(100000,4));
+        stop = System.nanoTime();
+        System.out.println("czas wykonania operacji nwd2 " + (stop - start) + " nanosekund");
     }
 
 }
