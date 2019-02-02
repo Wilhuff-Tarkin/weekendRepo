@@ -17,7 +17,7 @@ public class OperacjeNaTablicach {
 
         for (int i = 0; i < tablica2.length - 1; i++) {
             tablica2[i] = random.nextInt(10);}
-        System.out.println("Twoja losowa tablica:");
+        System.out.println("Twoja losowa stworzTablice:");
         System.out.println(Arrays.toString(tablica2));
     }
 
@@ -93,7 +93,7 @@ public class OperacjeNaTablicach {
 public static void wykonakOperacjeNaTablicach(){
     //czy jest niemalejąca
     int [] tablica1 = {1, 2, 2, 4, 5};
-    System.out.println("Podana tablica jest niemalejąca (true/false):");
+    System.out.println("Podana stworzTablice jest niemalejąca (true/false):");
     System.out.println(czyJestNiemalejaca(tablica1));
     System.out.println();
 

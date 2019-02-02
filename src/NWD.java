@@ -11,6 +11,17 @@ public class NWD {
         return a;
     }
 
+    public static int jakijestNWD3 (int a, int b){ //rekurencyjnie
+        if (b != 0)
+            return jakijestNWD3(b, a%b) ;
+            else return a;
+
+        }
+
+
+
+
+
     public static int jakijestNWD2 (int a, int b){
         while (b != 0){
             int r = a % b;
