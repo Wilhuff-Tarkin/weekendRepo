@@ -29,4 +29,20 @@ public class BinarySearch {
 
       return indeks;
     }
+    public static int wyszukajBinarnieRekurencja (int [] tab, int lewo, int prawo, int szukany){
+        if (lewo > prawo) return -1;
+
+        int wynik= 0;
+        int srodek = (lewo + prawo)/2;
+
+        if (tab[srodek] == szukany){
+            wynik = srodek;
+            System.out.println("wynik = " + srodek);
+        };
+
+     //   if (tab[srodek]>szukany
+     //TODO dokonczyc, rekurencyjnie przekazuje srodek -1 lub +1 jako argument do samej siebie (jako lewo lub prawo)
+
+        return wynik;
+    }
 }
