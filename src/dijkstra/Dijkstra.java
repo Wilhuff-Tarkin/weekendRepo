@@ -18,7 +18,7 @@ public class Dijkstra {
 
     private PriorityQueue <Vertex> priorityQueue;
 
-    public Dijkstra(LinkedList<Vertex>[] listAdjacent, int n) {   /// indexy tablicy beda odpowiadac liczbie nod'ów
+    public Dijkstra(int n, LinkedList<Vertex>[] listAdjacent) {   /// indexy tablicy beda odpowiadac liczbie nod'ów
         this.listAdjacent = listAdjacent;
         this.n = n;
         this.visitedTab = new boolean[n];
@@ -125,9 +125,8 @@ public class Dijkstra {
 
     }
 
-    public Dijkstra(int n, LinkedList <Vertex> [] list ){   //n liczba wierzcholkow, lista sasiedztwa
 
     }
 
 
-}
+

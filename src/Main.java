@@ -1,5 +1,8 @@
 import Drzewa.BinarneDrzewoPrzeszukiwan;
 import dijkstra.Dijkstra;
+import kopiec.Kopiec;
+
+import java.util.Arrays;
 
 public class Main {
 
@@ -9,7 +12,8 @@ public class Main {
         int[] numbers1 = new int[20]; //deklaruje tablice o 20 indeksach na ktorej bedzie operowal binary search
       //  System.out.println(BinarySearch.wyszukajBinarnie(numbers1, 30));
       //  wywolajBST();
-        Dijkstra.run();
+    //    Dijkstra.run();
+            wywolajKopiec();
 
     }
 
@@ -26,6 +30,13 @@ public class Main {
         bst.dodaj(1);
         bst.usun(1);
         bst.usun(7);
+    }
+
+    public static void wywolajKopiec (){
+        int [] tab = {3, 8, 2, 6, 10, 7, 9, 15, 4, 18};
+        Kopiec kopiec = new Kopiec();
+        kopiec.run(tab);
+        System.out.println(Arrays.toString(tab));
     }
 
 }
