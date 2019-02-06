@@ -16,5 +16,6 @@ public class Main {
         BubbleSort.bubble(tab.clone());
         SortowaniePrzezZliczanie.countSort(tab2.clone(), 50);
         InsertSort.insert(tab.clone());
+        QuickSort.quicksortuj(tab, 0, tab.length-1);
     }
 }
