@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class QuickSort {
 
-    static void quicksortuj(int[] tab, int lewy, int prawy) {
-        int pivot = tab[lewy + prawy / 2];
+    static int [] quicksortuj(int[] tab, int lewy, int prawy) {
+        int pivot = tab[(lewy + prawy) / 2];
         int i = lewy;
         int j = prawy;
 
@@ -23,19 +23,20 @@ public class QuickSort {
                 i++;
                 j--;
             }
+
             if (lewy < j) {
-                    quicksortuj(tab, lewy, j);
+                quicksortuj(tab, lewy, j);
             }
             if (i < prawy) {
                 quicksortuj(tab, i, prawy);
             }
 
-            System.out.println();
-            System.out.println("wynik quick sort:");
-            System.out.println(Arrays.toString(tab));
+            return tab;
+
+
 
         }
 
 
-    }
+    return tab;}
 }

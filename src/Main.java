@@ -35,7 +35,7 @@ public class Main {
     public static void wywolajKopiec (){
         int [] tab = {3, 8, 2, 6, 10, 7, 9, 15, 4, 18};
         Kopiec kopiec = new Kopiec();
-        kopiec.run(tab);
+        kopiec.odtworzStruktureKopca(tab);
         System.out.println(Arrays.toString(tab));
     }
 

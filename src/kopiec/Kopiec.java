@@ -25,7 +25,7 @@ public void stworz (int [] tab, int n, int obecny) {
 
     }
 
-public void run (int [] tab) {
+public void odtworzStruktureKopca (int [] tab) {
         int n = tab.length;
         for (int i = (n - 1)/2; i >= 0; i--){         // n-1/2 to najnizszy rodzic - potem dekrememuje przechadzac do poprzednich rodzicow
             stworz(tab, n, i);
